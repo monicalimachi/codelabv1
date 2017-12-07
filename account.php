@@ -15,7 +15,7 @@
 				echo "Welcome " . "{$row['name']}";
 			}
 			else {
-				echo "Invalid passowrd";
+				echo "Invalid All passowrd";
 			}
 		}
 		else {
