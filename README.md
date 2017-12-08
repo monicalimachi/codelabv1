@@ -1,8 +1,9 @@
 # codelabv1
 1. Let's start with some actual containers. But first let's check if your docker deamon is running. Copy and paste this to your command line:
 
-$ docker info
-$ docker --version
+ docker info
+
+ docker --version
 
 2. Run Containers
 > docker run hello-world
