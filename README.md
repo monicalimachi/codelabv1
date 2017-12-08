@@ -21,7 +21,7 @@
       * > docker run -it --name my-linux-container --rm -v /c/Users/:/my-data ubuntu bash
 
 5. Dockerfile
-> {FROM ubuntu
+  > {FROM ubuntu  
 CMD echo "Hello Monik"}
 
 6. New image
@@ -41,7 +41,7 @@ CMD echo "Hello Monik"}
     * > docker run -d --name nginx6 nginx 
     * > docker ps -a
     * > docker exec -ti nginx6 /bin/bash
- *Inside container
+ - Inside container
     * > apt-get install wget
     * > apt-get update
     * > apt-get install wget
