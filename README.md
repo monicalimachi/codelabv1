@@ -6,9 +6,9 @@
 
 2. Run Containers
 -  docker run hello-world
-Run command to display all containers
+*Run command to display all containers
 -  docker ps -a
-Run n containers with an image existent
+*Run n containers with an image existent
 -  docker run --name my-hello hello-world
 
 3. Remove an existent container or all
@@ -17,21 +17,21 @@ Run n containers with an image existent
 -  docker rm - (docker ps -a -f status=exited -q)
 
 4. Use volume to save data
--v [path to local]:[path inside container]
+   -v [path to local]:[path inside container]
 
-docker run -it --name my-linux-container --rm -v /c/Users/:/my-data ubuntu bash
+   docker run -it --name my-linux-container --rm -v /c/Users/:/my-data ubuntu bash
 
 5. Dockerfile
-FROM ubuntu
+{FROM ubuntu
 CMD echo "Hello Monik"
-
+}
 6. New image
 -  docker build -t alpine-my-version
 -  docker images
 -  docker run alpine-my-version
-7. some Commands
+7. Commands
 -  docker pull name_image
- add -a and all images with all versions will be download
+ *Add -a and all images with all versions will be download
 
  8. Remove an image
  -  docker rmi imageID
@@ -42,7 +42,7 @@ CMD echo "Hello Monik"
  -  docker run -d --name nginx6 nginx 
  -  docker ps -a
  -  docker exec -ti nginx6 /bin/bash
- Inside container
+ *Inside container
  - -  apt-get install wget
  - -  apt-get update
  - -  apt-get install wget
